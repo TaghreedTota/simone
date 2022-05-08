@@ -1,0 +1,2935 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*-------- Start Section One (Home) -------*/
+#home
+{
+  background-image: url(../img/intro-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: right top;
+  height: 100vh;
+}
+
+#home .navbar{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 22px 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 5;
+}
+
+#home .navbar .logo {
+  width: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home .navbar .links {
+  width: 72%;
+  display: flex;
+  align-items: center;
+}
+
+#home .navbar .links ul {
+  width: 60%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+#home .navbar .links ul a{
+  text-decoration: none;
+  color: rgba(250, 250, 250, 0.9);
+  font-family: 'Poppins', sans-serif;
+  transition: all 1s;
+}
+
+#home .navbar .links ul .color {
+  color: #20C997;
+}
+
+#home .navbar .links ul a:hover {
+  color: #20C997;
+}
+
+#home .layer
+{
+  background-color: #111418;
+  opacity: 0.8;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+#home .icon {
+  position: fixed;
+  right: 0;
+  top: 220px;
+  background-color: #555555;
+  width: 40px;
+  height: 40px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100000;
+}
+
+#home .icon i {
+  color: #fff;
+  font-size: 20px;
+}
+
+/*------Content------*/
+#home .layer .caption
+{
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+
+#home .layer .caption h3 {
+  padding: 50px 0 15px 0;
+  margin-top: 50px;
+  font-size: 29px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+#home .layer .caption h1 {
+  font-size: 68px;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+h1::after {
+  content: " | ";
+  animation-name: typing;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+  0% { content: " |";}
+  1% { content: " S |";}
+  2% { content: " Si |";}
+  3% { content: " Sim |";}
+  4% { content: " Simo |";}
+  5% { content: " Simon|";}
+  6% { content: " Simone|";}
+  7% { content: " Simone O|";}
+  8% { content: " Simone Ol|";}
+  9% { content: " Simone Oli|";}
+  10% { content: " Simone Oliv|";}
+  12% { content: " Simone Olivi|";}
+  13% { content: " Simone Olivia|";}
+  14% { content: " Simone Olivi|";}
+  15% { content: " Simone Oliv|";}
+  16% { content: " Simone Oli|";}
+  17% { content: " Simone Ol|";}
+  18% { content: " Simone O|";}
+  19% { content: " Simone |";}
+  20% { content: " Simone|";}
+  22% { content: " Simon|";}
+  23% { content: " Simo|";}
+  24% { content: " Sim|";}
+  25% { content: " Si|";}
+  26% { content: " S|";}
+  28% { content: " |";}
+  29% { content: " a |";}
+  30% { content: " a F |";}
+  31% { content: " a Fr |";}
+  32% { content: " a Fre |";}
+  33% { content: " a Free|";}
+  34% { content: " a Freel|";}
+  35% { content: " a Freela|";}
+  36% { content: " a Freelan|";}
+  37% { content: " a Freelanc|";}
+  38% { content: " a Freelance|";}
+  39% { content: " a Freelancer|";}
+  40% { content: " a Freelancer.|";}
+  41% { content: " a Freelancer|";}
+  42% { content: " a Freelance|";}
+  43% { content: " a Freelanc|";}
+  44% { content: " a Freelan|";}
+  45% { content: " a Freela|";}
+  46% { content: " a Freel|";}
+  47% { content: " a Free|";}
+  48% { content: " a Fre|";}
+  49% { content: " a Fr|";}
+  50% { content: " a F|";}
+  51% { content: " a |";}
+  52% { content: " a P |";}
+  53% { content: " a Ph|";}
+  54% { content: " a Pho|";}
+  55% { content: " a Phot|";}
+  56% { content: " a Photo|";}
+  57% { content: " a Photog|";}
+  58% { content: " a Photogr|";}
+  59% { content: " a Photogra|";}
+  60% { content: " a Photograp|";}
+  61% { content: " a Photograph|";}
+  62% { content: " a Photographe|";}
+  63% { content: " a Photographer|";}
+  64% { content: " a Photographer.|";}
+  65% { content: " a Photographer|";}
+  67% { content: " a Photographe|";}
+  68% { content: " a Photograph|";}
+  69% { content: " a Photograp|";}
+  70% { content: " a Photogra|";}
+  71% { content: " a Photogr|";}
+  72% { content: " a Photog|";}
+  73% { content: " a Photo|";}
+  74% { content: " a Phot|";}
+  75% { content: " a Pho|";}
+  76% { content: " a Ph|";}
+  77% { content: " a |";}
+  78% { content: " a D|";}
+  79% { content: " a De|";}
+  80% { content: " a Des|";}
+  81% { content: " a Desi|";}
+  82% { content: " a Desig|";}
+  83% { content: " a Design|";}
+  84% { content: " a Designe|";}
+  85% { content: " a Designer|";}
+  86% { content: " a Designer.|";}
+  88% { content: " a Designer|";}
+  90% { content: " a Designe|";}
+  91% { content: " a Design|";}
+  92% { content: " a Desig|";}
+  95% { content: " a Desi|";}
+  96% { content: " a Des|";}
+  97% { content: " a De|";}
+  98% { content: " a D|";}
+  100% { content: " a |";}
+}
+
+#home .layer .caption p {
+  font-size: 22px;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 25px;
+}
+
+#home .layer .caption button {
+  background-color: transparent;
+  border: 2px solid #20C997;
+  padding: 15px 40px;
+  border-radius: 35px;
+  color: #20C997;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+#home .layer .caption button:hover {
+  background-color: #20C997;
+  color: #fff;
+}
+/*-------- Arrow down -------*/
+#home .layer .arrow i {
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 35px;
+  padding-top: 35px;
+  font-size: 22px;
+  animation: move 2s infinite;
+  cursor: pointer;
+}
+
+@keyframes move {
+  0% {transform: translateY(0)}
+  100% {transform: translateY(60px)}
+}
+/*-------- End Section One (Home) -------*/
+
+
+/*-------- Start Section two (About) -------*/
+#about {
+  padding: 30px 0 40px;
+  margin-bottom: 40px;
+}
+
+#about .layer-2 {
+  padding-top: 50px;
+  position: relative;
+}
+
+#about .layer-2::before {
+  content: "about me";
+  position: absolute;
+  top: 10px;
+  left: 25%;
+  color: #555555;
+  opacity: 0.1;
+  text-transform: uppercase;
+  width: fit-content;
+  height: 150px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 130px;
+}
+
+#about .layer-2 .container-1 {
+  width: 85%;
+  margin: auto;
+}
+
+/*---------- Title---------*/
+#about .layer-2 .container-1 .title {
+  text-align: center;
+  color: #27292c;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 35px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+#about .layer-2 .container-1 .title::after {
+  content: "";
+  position: absolute;
+  top: 60%;
+  left: 47%;
+  background-color: #20C997;
+  width: 70px;
+  height: 3px;
+}
+
+#about .layer-2 .container-1 .content {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/*---------- Content Left---------*/
+#about .layer-2 .container-1 .content .cont-1 {
+  width: 65%;
+}
+
+#about .layer-2 .container-1 .content .cont-1 h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  padding-bottom: 10px;
+}
+
+#about .layer-2 .container-1 .content .cont-1 h2 span {
+  color: #20C997;
+}
+
+#about .layer-2 .container-1 .content .cont-1 p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #4c4d4d;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  line-height: 1.8;
+}
+
+/*---------- Content Right---------*/
+#about .layer-2 .container-1 .content .cont-2 {
+  width: 30%;
+}
+
+#about .layer-2 .container-1 .content .cont-2 p {
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: #4c4d4d;
+  margin-left: 20px;
+  margin-right: 30px;
+  padding: 10px 0 15px;
+  border-bottom: solid 1px rgb(218, 213, 213);
+}
+
+#about .layer-2 .container-1 .content .cont-2 .brdr {
+  border: none;
+}
+
+#about .layer-2 .container-1 .content .cont-2 p span {
+  font-weight: 500;
+}
+
+#about .layer-2 .container-1 .content .cont-2 p .mail {
+  color: #20C997;
+  font-weight: 300;
+}
+
+/*---------- Button---------*/
+#about .layer-2 .container-1 .content .cont-2 button {
+  background-color: #20C997;
+  color: #fff;
+  margin-left: 20px;
+  margin-top: 10px;
+  padding: 12px 35px;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  box-shadow: 0 0 20px rgb(180, 177, 177);
+  transition: all 1s;
+  cursor: pointer;
+}
+
+#about .layer-2 .container-1 .content .cont-2 button:hover
+{
+  background-color:#1BAA80;
+}
+
+/*----------Number Down---------*/
+#about .layer-2 .container-1 .number {
+  margin-top: 30px;
+  padding: 35px 0 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#about .layer-2 .container-1 .number .num {
+  text-align: center;
+}
+
+#about .layer-2 .container-1 .number .line {
+  position: relative;
+}
+
+#about .layer-2 .container-1 .number .line::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 155%;
+  width: 2px;
+  height: 140px;
+  border-left: dashed 1px rgb(219, 214, 214);
+}
+
+#about .layer-2 .container-1 .number .num .subnumber {
+  font-size: 45px;
+  color: #6c757d;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+#about .layer-2 .container-1 .number .num .text {
+  font-size: 17px;
+  color: #4c4d4d;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+/*-------- End Section two (About) -------*/
+
+/* -------- Start Section Three (what do) ------- */
+#what-do {
+  background-color: #F8F9FA;
+  padding: 50px 0 30px;
+}
+
+#what-do .layer-3 {
+  padding-top: 50px;
+  position: relative;
+}
+
+#what-do .layer-3::before {
+  content: "services";
+  position: absolute;
+  top: 25px;
+  left: 30%;
+  color: #555555;
+  opacity: 0.1;
+  text-transform: uppercase;
+  width: fit-content;
+  height: 150px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 115px;
+}
+
+#what-do .layer-3 .container-2 {
+  width: 75%;
+  margin: auto;
+}
+
+/*---------- Title---------*/
+#what-do .layer-3 .container-2 .title {
+  text-align: center;
+  color: #27292c;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 38px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+#what-do .layer-3 .container-2 .title::after {
+  content: "";
+  position: absolute;
+  top: 60%;
+  left: 47%;
+  background-color: #20C997;
+  width: 70px;
+  height: 3px;
+}
+
+#what-do .layer-3 .container-2 .content {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#what-do .layer-3 .container-2 .content .text {
+  width: 48%;
+  padding: 25px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#what-do .layer-3 .container-2 .content .text .icon {
+width: 10%;
+}
+
+#what-do .layer-3 .container-2 .content .text .icon i {
+  background-color: #FFFFFF;
+  width: 70px;
+  height: 70px;
+  font-size: 30px;
+  color: #20c997;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#what-do .layer-3 .container-2 .content .text .subtitle {
+  width: 85%;
+}
+
+#what-do .layer-3 .container-2 .content .text .subtitle h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 8px;
+  padding-left: 20px;
+}
+
+#what-do .layer-3 .container-2 .content .text .subtitle p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  padding-left: 20px
+}
+/* -------- End Section Three (what do) ------- */
+
+/* -------- Start Section Four (Resume) ------- */
+#resume {
+  padding: 30px 0 30px;
+  margin-bottom: 40px;
+}
+
+#resume .layer-4 {
+  padding-top: 40px;
+  position: relative;
+}
+
+#resume .layer-4::before {
+  content: "summary";
+  position: absolute;
+  top: 10px;
+  left: 28%;
+  color: #555555;
+  opacity: 0.1;
+  text-transform: uppercase;
+  width: fit-content;
+  height: 150px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 130px;
+}
+
+#resume .layer-4 .container-3 {
+  width: 82%;
+  margin: auto;
+}
+
+/*---------- Title---------*/
+#resume .layer-4 .container-3 .title {
+  text-align: center;
+  color: #27292c;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 38px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+#resume .layer-4 .container-3 .title::after {
+  content: "";
+  position: absolute;
+  top: 60%;
+  left: 46%;
+  background-color: #20C997;
+  width: 80px;
+  height: 3px;
+}
+
+#resume .layer-4 .container-3 .content {
+  margin-top: 20px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#resume .layer-4 .container-3 .content .left,
+#resume .layer-4 .container-3 .content .right {
+  width: 48%;
+}
+
+#resume .layer-4 .container-3 .content .left h2,
+#resume .layer-4 .container-3 .content .right h2 {
+  color: #252b33;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+}
+
+#resume .layer-4 .container-3 .content .left .text,
+#resume .layer-4 .container-3 .content .right .text {
+  border: 1px solid #d8dbdd;
+  border-radius: 3px;
+  padding: 20px;
+  margin: 25px 0;
+}
+
+#resume .layer-4 .container-3 .content .left .text .green,
+#resume .layer-4 .container-3 .content .right .text .green {
+  background-color: #20c997;
+  width: fit-content;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  padding: 0 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#resume .layer-4 .container-3 .content .left .text h3,
+#resume .layer-4 .container-3 .content .right .text h3 {
+  color: #252b33;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+#resume .layer-4 .container-3 .content .left .text .red,
+#resume .layer-4 .container-3 .content .right .text .red {
+  color: #dc3545;
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  margin-bottom: 12px;
+}
+
+#resume .layer-4 .container-3 .content .left .text p,
+#resume .layer-4 .container-3 .content .right .text p {
+  color: #4c4d4d;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 300px;
+  border-radius: 5px;
+  margin-bottom: 12px;
+}
+
+/*-----------Skills ---------*/
+#resume .layer-4 .container-3 .skills h2 {
+  color: #252b33;
+  font-family: 'Poppins', sans-serif;
+  font-size: 26px;
+  font-weight: 500px;
+  margin-top: 20px;
+}
+
+#resume .layer-4 .container-3 .skills .progress {
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#resume .layer-4 .container-3 .skills .progress .progres {
+  width: 48%;
+}
+
+#resume .layer-4 .container-3 .skills .progress .progres .text {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#resume .layer-4 .container-3 .skills .progress .progres .text p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  font-weight: 500px;
+}
+
+/*-------- Progress par ---------*/
+#resume .layer-4 .container-3 .skills .progress .progres .progres-par {
+  width: 100%;
+  height: 9px;
+  border-radius: 5px;
+  margin: 15px 0;
+  background-color: #d8dbdd;
+  position: relative;
+}
+
+#resume .layer-4 .container-3 .skills .progress .progres .progres-par span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 65%;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #20C997;
+}
+
+#resume .layer-4 .container-3 .skills .progress .progres .progres-par .bar-2{
+  width: 70%;
+}
+
+#resume .layer-4 .container-3 .skills .progress .progres .progres-par .bar-3{
+  width: 95%;
+}
+
+#resume .layer-4 .container-3 .skills .progress .progres .progres-par .bar-4{
+  width: 60%;
+}
+
+#resume .layer-4 .container-3 .skills .progress .progres .progres-par .bar-5{
+  width: 80%;
+}
+
+#resume .layer-4 .container-3 .skills .progress .progres .progres-par .bar-6{
+  width: 99%;
+}
+
+#resume .layer-4 .container-3 .btn {
+  width: fit-content;
+  margin: auto;
+}
+
+#resume .layer-4 .container-3 .btn button {
+  background-color: transparent;
+  padding: 12px 40px;
+  border: 2px solid #6c757d;
+  border-radius: 25px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 500px;
+  color: #6c757d;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+#resume .layer-4 .container-3 .btn button:hover {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+/* -------- End Section Four (Resume) ------- */
+
+/* --------Start Section Five (Portfolio)-------- */
+#portfolio {
+  background-color: #F8F9FA;
+  padding: 30px 0 30px;
+  height: 1370px;  /* fixed height Because Position */
+  position: relative;
+}
+
+#portfolio .layer-5 {
+  padding-top: 40px;
+  position: relative;
+}
+
+#portfolio .layer-5::before {
+  content: "portfolio";
+  position: absolute;
+  top: 10px;
+  left: 25%;
+  color: #555555;
+  opacity: 0.1;
+  text-transform: uppercase;
+  width: fit-content;
+  height: 150px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 130px;
+}
+
+#portfolio .layer-5 .container-4 {
+  width: 85%;
+  margin: auto;
+}
+
+/*---------- Title---------*/
+#portfolio .layer-5 .container-4 .title {
+  text-align: center;
+  color: #27292c;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 38px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+#portfolio .layer-5 .container-4 .title::after {
+  content: "";
+  position: absolute;
+  top: 63%;
+  left: 46%;
+  background-color: #20C997;
+  width: 80px;
+  height: 3px;
+}
+
+#portfolio .layer-5 .container-4 .list {
+  margin: 30px 0;
+}
+
+/*---------------list------------------*/
+#portfolio .layer-5 .container-4 .list  ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+#portfolio .layer-5 .container-4 .list  ul li {
+  padding: 15px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #7b8084;
+  transition: all 0.5s;
+}
+
+#portfolio .layer-5 .container-4 .list  ul li:hover {
+  color: #20c997;
+}
+
+#portfolio .layer-5 .container-4 .list  ul .color {
+  color: #20c997;
+  position: relative;
+}
+
+#portfolio .layer-5 .container-4 .list  ul .color::after {
+  content: "";
+  background-color: #20c997;
+  width: 50px;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  top: 50px;
+}
+
+#portfolio .layer-5 .container-4 .pics {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#portfolio .layer-5 .container-4 .pics .picture {
+  width: 33.33%;
+  padding: 12px;
+}
+
+.overflow {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#portfolio .layer-5 .container-4 .pics .picture img {
+  border-radius: 5px;
+  width: 100%;
+  transition: all 1s;
+}
+
+#portfolio .layer-5 .container-4 .pics .overflow:hover img {
+  transform: scale(1.1);
+}
+/*---------------Postion------------------*/
+#portfolio .layer-5 .container-4 .pics .one {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#portfolio .layer-5 .container-4 .pics .two {
+  position: absolute;
+  left: 380px;
+  top: 0;
+}
+
+#portfolio .layer-5 .container-4 .pics .three {
+  position: absolute;
+  left: 760px;
+  top: 0;
+}
+
+#portfolio .layer-5 .container-4 .pics .four {
+  position: absolute;
+  left: 0;
+  top: 260px;
+}
+
+#portfolio .layer-5 .container-4 .pics .five {
+  position: absolute;
+  left: 760px;
+  top: 260px;
+}
+
+#portfolio .layer-5 .container-4 .pics .six {
+  position: absolute;
+  left: 760px;
+  top: 522px;
+}
+
+#portfolio .layer-5 .container-4 .pics .seven {
+  position: absolute;
+  left: 380px;
+  top: 618px;
+  padding-bottom: 50px;
+}
+
+/* -------------Layer----------------*/
+#portfolio .layer-5 .container-4 .pics .overflow:hover .overley {
+  opacity: 1;
+}
+
+#portfolio .layer-5 .container-4 .pics .one .overley,
+#portfolio .layer-5 .container-4 .pics .two .overley,
+#portfolio .layer-5 .container-4 .pics .three .overley,
+#portfolio .layer-5 .container-4 .pics .four .overley,
+#portfolio .layer-5 .container-4 .pics .five .overley,
+#portfolio .layer-5 .container-4 .pics .six .overley,
+#portfolio .layer-5 .container-4 .pics .seven .overley {
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 94%;
+  height: 91%;
+  border-radius: 5px;
+  opacity: 0;
+  transition: all 1s;
+}
+
+#portfolio .layer-5 .container-4 .pics .two .overley {
+  height: 96.2%;
+}
+#portfolio .layer-5 .container-4 .pics .four .overley {
+  height: 96%;
+}
+
+#portfolio .layer-5 .container-4 .pics .six .overley {
+  height: 93.7%;
+}
+
+#portfolio .layer-5 .container-4 .pics .seven .overley {
+  height: 85.2%;
+}
+
+#portfolio .layer-5 .container-4 .pics .one .overley .over-text,
+#portfolio .layer-5 .container-4 .pics .two .overley .over-text,
+#portfolio .layer-5 .container-4 .pics .three .overley .over-text,
+#portfolio .layer-5 .container-4 .pics .four .overley .over-text,
+#portfolio .layer-5 .container-4 .pics .five .overley .over-text,
+#portfolio .layer-5 .container-4 .pics .six .overley .over-text,
+#portfolio .layer-5 .container-4 .pics .seven .overley .over-text {
+  height: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#portfolio .layer-5 .container-4 .pics .one .overley .over-text h4,
+#portfolio .layer-5 .container-4 .pics .two .overley .over-text h4,
+#portfolio .layer-5 .container-4 .pics .three .overley .over-text h4,
+#portfolio .layer-5 .container-4 .pics .four .overley .over-text h4,
+#portfolio .layer-5 .container-4 .pics .five .overley .over-text h4,
+#portfolio .layer-5 .container-4 .pics .six .overley .over-text h4,
+#portfolio .layer-5 .container-4 .pics .seven .overley .over-text h4 {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+#portfolio .layer-5 .container-4 .pics .one .overley .over-text span,
+#portfolio .layer-5 .container-4 .pics .two .overley .over-text span,
+#portfolio .layer-5 .container-4 .pics .three .overley .over-text span,
+#portfolio .layer-5 .container-4 .pics .four .overley .over-text span,
+#portfolio .layer-5 .container-4 .pics .five .overley .over-text span,
+#portfolio .layer-5 .container-4 .pics .six .overley .over-text span,
+#portfolio .layer-5 .container-4 .pics .seven .overley .over-text span {
+  color: #dee3e4;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+/* --------End Section Five (Portfolio)-------- */
+
+
+/* -- -------- Start Section Six (Clint) ------- - */
+#clinet {
+  padding: 30px 0 20px;
+  margin-bottom: 30px;
+}
+
+#clinet .layer-6 {
+  padding: 40px 0;
+  position: relative;
+}
+
+#clinet .layer-6::before {
+  content: "testimonial";
+  position: absolute;
+  top: 10px;
+  left: 20%;
+  color: #555555;
+  opacity: 0.1;
+  text-transform: uppercase;
+  width: fit-content;
+  height: 150px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 130px;
+}
+
+#clinet .layer-6 .container-5 {
+  width: 85%;
+  margin: auto;
+}
+
+/*---------- Title---------*/
+#clinet .layer-6 .container-5 .title {
+  text-align: center;
+  color: #27292c;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 38px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+#clinet .layer-6 .container-5 .title::after {
+  content: "";
+  position: absolute;
+  top: 62%;
+  left: 46%;
+  background-color: #20C997;
+  width: 80px;
+  height: 3px;
+}
+
+#clinet .layer-6 .container-5 .content {
+  margin-top: 50px;
+  display: flex;
+  position: relative;
+}
+
+#clinet .layer-6 .container-5 .content .circle {
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #20C997;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -24px;
+  left: 47.7%;
+  cursor: pointer;
+}
+
+#clinet .layer-6 .container-5 .content::before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 48%;
+  width: 12px;
+  height: 12px;
+  background-color: #20C997;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#clinet .layer-6 .container-5 .content .circle-2 {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50.5%;
+  width: 12px;
+  height: 12px;
+  background-color: rgb(177, 169, 169);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+
+#clinet .layer-6 .container-5 .content .circle-2:hover {
+  background-color: #20C997
+}
+
+#clinet .layer-6 .container-5 .content .circle-2:hover .circle-3{
+  opacity: 1;
+}
+
+#clinet .layer-6 .container-5 .content .circle-3 {
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #20C997;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -4px;
+  left: -4px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+#clinet .layer-6 .container-5 .content .left,
+#clinet .layer-6 .container-5 .content .right {
+  width: 50%;
+  padding: 20px;
+}
+
+#clinet .layer-6 .container-5 .content .extra-layer {
+  background-color: #f8f9fa;
+  border-radius: 3px;
+  padding: 25px;
+}
+
+#clinet .layer-6 .container-5 .content .extra-layer .top {
+  margin: 30px 0;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+
+}
+
+#clinet .layer-6 .container-5 .content .extra-layer .top .image {
+  width: 15%;
+}
+
+#clinet .layer-6 .container-5 .content .extra-layer .top .image img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+#clinet .layer-6 .container-5 .content .extra-layer .top .text {
+  width: 80%;
+}
+
+#clinet .layer-6 .container-5 .content .extra-layer .top .text p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  text-transform: capitalize;
+  padding: 5px 0 2px 0;
+}
+
+#clinet .layer-6 .container-5 .content .extra-layer .top .text .one {
+  color: #212529;
+  
+}
+
+#clinet .layer-6 .container-5 .content .extra-layer .top .text .two {
+  color:#6c757d;
+  padding-top: 2px;
+  font-size: 15px;
+}
+
+#clinet .layer-6 .container-5 .content .extra-layer .bottom {
+  margin: 20px 15px ;
+}
+
+#clinet .layer-6 .container-5 .content .extra-layer .bottom p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.8;
+  font-size: 16px;
+  color: #212529
+}
+
+#clinet .layer-6 .container-5 .content .extra-layer .stars {
+  padding-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  color: #F1C30D;
+  font-size: 15px;
+}
+
+/* -- -------- End Section Six (Clinet) -------  */
+
+/* -------- Start Section seven (Contact) -------  */
+
+#contact {
+  background-color: #F8F9FA;
+  padding: 30px 0 40px;
+}
+
+#contact .layer-7 {
+  padding: 40px 0;
+  position: relative;
+}
+
+#contact .layer-7::before {
+  content: "contact";
+  position: absolute;
+  top: 10px;
+  left: 26%;
+  color: #555555;
+  opacity: 0.1;
+  text-transform: uppercase;
+  width: fit-content;
+  height: 150px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 130px;
+}
+
+#contact .layer-7 .container-6 {
+  width: 85%;
+  margin: auto;
+}
+
+/*---------- Title---------*/
+#contact .layer-7 .container-6 .title {
+  text-align: center;
+  color: #27292c;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 38px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+#contact .layer-7 .container-6 .title::after {
+  content: "";
+  position: absolute;
+  top: 62%;
+  left: 46%;
+  background-color: #20C997;
+  width: 80px;
+  height: 3px;
+}
+
+#contact .layer-7 .container-6 .content {
+  margin-top: 40px;
+  display: flex;
+}
+
+#contact .layer-7 .container-6 .content .left {
+  width: 25%;
+}
+
+#contact .layer-7 .container-6 .content .left h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  color: #252b33;
+  margin: 20px 0;
+}
+
+#contact .layer-7 .container-6 .content .left p {
+  color:#4c4d4d;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+#contact .layer-7 .container-6 .content .left i {
+  color: #20C997;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+#contact .layer-7 .container-6 .content .left .text-1 {
+  margin-bottom: 30px;
+}
+
+#contact .layer-7 .container-6 .content .right {
+  width: 75%;
+}
+
+#contact .layer-7 .container-6 .content .right h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  color: #252b33;
+  margin: 20px 0;
+}
+
+#contact .layer-7 .container-6 .content .right input {
+  margin-bottom: 20px;
+  width: 48%;
+  padding-left: 11px;
+  height: 50px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgb(231, 225, 225);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+#contact .layer-7 .container-6 .content .right .up {
+  margin-right: 10px;
+}
+
+#contact .layer-7 .container-6 .content .right .up-1 {
+  margin-left: 10px;
+}
+
+#contact .layer-7 .container-6 .content .right .down {
+  margin-top: 5px;
+  width: 99%;
+  padding-left: 10px;
+  padding-top: 10px;
+  height: 140px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgb(231, 225, 225);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+#contact .layer-7 .container-6 .content .right .up:focus,
+#contact .layer-7 .container-6 .content .right .up-1:focus,
+#contact .layer-7 .container-6 .content .right .down:focus
+{
+  border: #83aadd 1px solid;
+  box-shadow: 0 0 10px #83aadd ;
+  outline: none;
+}
+
+#contact .layer-7 .container-6 .content .right .btn {
+  display: flex;
+  justify-content: center;
+}
+
+#contact .layer-7 .container-6 .content .right button {
+  background-color: #20C997;
+  color: #fff;
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 12px 35px;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  box-shadow: 0 0 20px rgb(180, 177, 177);
+  transition: all 1s;
+  cursor: pointer;
+}
+
+#contact .layer-7 .container-6 .content .right button:hover {
+  background-color:#1BAA80;
+}
+
+/* -------- End Section seven (Contact) -------  */
+
+
+/* -------- Start Section Eight (footer) -------  */
+
+#footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#footer .container-8
+{
+  width: 90%;
+  margin: 20px auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer .container-8 .left {
+  width: 70%;
+  padding-left: 40px;
+}
+
+#footer .container-8 .left p
+{
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #252b33;
+}
+
+#footer .container-8 .left p a
+{
+  text-decoration: none;
+  color: #20C997;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.5s;
+}
+
+#footer .container-8 .left p a:hover{
+  color: #1BAA80;
+}
+
+#footer .container-8 .right {
+  width: 30%;
+  padding-left: 50px;
+  display: flex;
+}
+
+#footer .container-8 .right a {
+  display: block;
+  text-decoration: none;
+  color: #252b33;
+  margin: 0 10px;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.5s;
+}
+
+#footer .container-8 .right a:hover {
+  color: #20C997;
+}
+
+#footer .container-8 .arrow-up {
+  background-color: #b5babe;
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  bottom: 8px;
+  right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 3;
+  cursor: pointer;
+}
+
+#footer .container-8 .arrow-up i {
+  color: #fff;
+}
+
+/* -------- End Section Eight (footer) -------  */
+
+
+#preloader {
+  background-color: #fff;
+  background-image: url(../img/pre.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20% ;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+
+/*--------------------- Media Query-------------------*/
+
+@media screen and (max-width:568px) {
+
+  /*    Section Home ===============*/
+  
+  #home
+{
+  background-position: center center;
+}
+
+#home .navbar{
+  flex-direction: column;
+}
+
+#home .navbar .logo {
+  padding-left: 5px;
+  display: block;
+}
+
+#home .navbar .links {
+  width: 30%;
+}
+
+.span {
+  display: none;
+}
+
+#home .navbar .links ul a{
+  padding: 5px;
+  font-size: 10px;
+}
+
+#home .layer .caption h1 {
+  font-size: 30px;
+}
+
+#home .layer .caption button {
+  padding: 10px 25px;
+}
+
+  /*    Section About ===============*/  
+  #about .layer-2::before {
+    top: 40px;
+    left: 10%;
+    font-size: 50px;
+  }
+  
+  #about .layer-2 .container-1 {
+    width: 90%;
+  }
+  
+  #about .layer-2 .container-1 .title {
+
+    font-size: 30px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+  }
+  
+  #about .layer-2 .container-1 .title::after {
+    top: 70%;
+    left: 35%;
+  }
+  
+  #about .layer-2 .container-1 .content {
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  #about .layer-2 .container-1 .content .cont-1 {
+    width: 100%;
+    text-align: center;
+  }
+  
+  #about .layer-2 .container-1 .content .cont-1 h2 {
+    font-size: 28px;    
+  }
+
+  
+  #about .layer-2 .container-1 .content .cont-1 p {
+    font-size: 15px;
+  }
+  
+  #about .layer-2 .container-1 .content .cont-1 .space {
+    padding-bottom: 40px;
+  }
+
+  #about .layer-2 .container-1 .content .cont-2 {
+    width: 100%;
+  }
+
+  #about .layer-2 .container-1 .number {
+    flex-wrap: wrap;
+  }
+  
+  #about .layer-2 .container-1 .number .num {
+    width: 50%;
+  }
+  
+  
+  #about .layer-2 .container-1 .number .line::after {
+    left: 100%;
+
+  }
+
+  #about .layer-2 .container-1 .number .line-2::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 25%;
+    width: 250px;
+    height: 2px;
+    border-bottom: dashed 1px rgb(219, 214, 214);
+  }
+
+  #about .layer-2 .container-1 .number .brdr {
+    margin-bottom: 40px;
+  }
+
+  #about .layer-2 .container-1 .number .brdr::after {
+  content: " ";
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: none;
+  }
+  
+  #about .layer-2 .container-1 .number .num .subnumber {
+    font-size: 35px;
+  }
+ 
+
+  /*    Section What Do ===============*/
+  #what-do .layer-3::before {
+    top: 33px;
+    left: 10%;
+    font-size: 60px;
+  }
+  
+  #what-do .layer-3 .container-2 {
+    width: 90%;
+  }
+  
+  #what-do .layer-3 .container-2 .title {
+    font-size: 32px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+  }
+  
+  #what-do .layer-3 .container-2 .title::after {
+    left: 40%;
+  }
+  
+  #what-do .layer-3 .container-2 .content .text {
+    width: 100%;
+  }
+  
+  #what-do .layer-3 .container-2 .content .text .icon i {
+    width: 50px;
+    height: 50px;
+  }
+  
+  /*    Section Resume ===============*/
+  
+  #resume .layer-4::before {
+    top: 35px;
+    left: 15%;
+    font-size: 50px;
+  }
+  
+  #resume .layer-4 .container-3 {
+    width: 95%;
+  }
+  
+  #resume .layer-4 .container-3 .title {
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  
+  #resume .layer-4 .container-3 .title::after {
+    top: 70%;
+    left: 40%;
+  }
+  
+  #resume .layer-4 .container-3 .content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #resume .layer-4 .container-3 .content .left,
+  #resume .layer-4 .container-3 .content .right {
+    width: 100%;
+  }
+  
+  #resume .layer-4 .container-3 .content .left .text .red,
+  #resume .layer-4 .container-3 .content .right .text .red {
+    font-size: 15px;
+  }
+  
+  #resume .layer-4 .container-3 .skills .progress .progres {
+    width: 100%;
+  }
+
+  #resume .layer-4 .container-3 .btn button {
+    padding: 12px 25px;
+  }
+  
+/*    Section portfolio ===============*/
+#portfolio {
+  height: auto; 
+  position: static;
+}
+
+#portfolio .layer-5 {
+  position: relative;
+}
+
+#portfolio .layer-5::before {
+  top: 25px;
+  left: 10%;
+  font-size: 50px;
+}
+
+#portfolio .layer-5 .container-4 {
+  width: 100%;
+}
+
+#portfolio .layer-5 .container-4 .title {
+  font-size: 32px;
+  padding-top: 0;
+  padding-bottom: 30px;
+}
+
+#portfolio .layer-5 .container-4 .title::after {
+  top: 58%;
+  left: 38%;
+}
+
+#portfolio .layer-5 .container-4 .list {
+  margin: 20px 0;
+}
+
+#portfolio .layer-5 .container-4 .list  ul{
+  justify-content: center;
+}
+
+#portfolio .layer-5 .container-4 .list  ul li {
+  padding: 5px;
+  font-size: 14px;
+}
+
+#portfolio .layer-5 .container-4 .list  ul .color::after {
+  width: 25px;
+  top: 25px;
+}
+
+#portfolio .layer-5 .container-4 .pics {
+  position: relative;
+}
+
+#portfolio .layer-5 .container-4 .pics .picture {
+  width: 100%;
+}
+
+#portfolio .layer-5 .container-4 .pics .one {
+  position: relative;
+  left: 0;
+}
+
+#portfolio .layer-5 .container-4 .pics .two {
+  position: relative;
+  left: 0;
+}
+
+#portfolio .layer-5 .container-4 .pics .three {
+  position: relative;
+  left: 0;
+}
+
+#portfolio .layer-5 .container-4 .pics .four {
+  position: relative;
+  top: 0;
+}
+
+#portfolio .layer-5 .container-4 .pics .five {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+#portfolio .layer-5 .container-4 .pics .six {
+  position:   relative;
+  left: 0;
+  top: 0;
+}
+
+#portfolio .layer-5 .container-4 .pics .seven {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+#portfolio .layer-5 .container-4 .pics .one .overley,
+#portfolio .layer-5 .container-4 .pics .two .overley,
+#portfolio .layer-5 .container-4 .pics .three .overley,
+#portfolio .layer-5 .container-4 .pics .four .overley,
+#portfolio .layer-5 .container-4 .pics .five .overley,
+#portfolio .layer-5 .container-4 .pics .six .overley,
+#portfolio .layer-5 .container-4 .pics .seven .overley {
+  width: 92%;
+  height: 89%;
+}
+
+#portfolio .layer-5 .container-4 .pics .two .overley {
+  height: 95%;
+}
+#portfolio .layer-5 .container-4 .pics .four .overley {
+  height: 94.5%;
+}
+
+#portfolio .layer-5 .container-4 .pics .six .overley {
+  height: 92.2%;
+}
+
+#portfolio .layer-5 .container-4 .pics .seven .overley {
+  height: 82%;
+}
+
+/*    Section Clinet  ===============*/
+#clinet .layer-6::before {
+  top: 30px;
+  left: 10%;
+  font-size: 45px;
+}
+
+#clinet .layer-6 .container-5 {
+  width: 92%;
+}
+
+#clinet .layer-6 .container-5 .title {
+  font-size: 30px;
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+
+#clinet .layer-6 .container-5 .title::after {
+  top: 70%;
+  left: 35%;
+}
+
+#clinet .layer-6 .container-5 .content {
+  flex-wrap: wrap;
+}
+
+#clinet .layer-6 .container-5 .content .circle {
+  left: 45%;
+}
+
+#clinet .layer-6 .container-5 .content::before {
+  left: 46.2%;
+}
+
+#clinet .layer-6 .container-5 .content .circle-2 {
+  left: 53%;
+}
+
+#clinet .layer-6 .container-5 .content .left {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+#clinet .layer-6 .container-5 .content .right {
+  width: 100%;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#clinet .layer-6 .container-5 .content .extra-layer .top .image {
+  width: 30%;
+}
+
+#clinet .layer-6 .container-5 .content .extra-layer .top .image img {
+  width: 90%;
+}
+
+#clinet .layer-6 .container-5 .content .extra-layer .top .text {
+  width: 70%;
+}
+
+#clinet .layer-6 .container-5 .content .right {
+  display: none;
+}
+
+
+/*    Section Contact  ===============*/
+#contact {
+  padding: 30px 0 50px;
+}
+
+#contact .layer-7 {
+  padding:  0;
+}
+
+#contact .layer-7::before {
+  top: 15px;
+  left: 10%;
+  height: 100px;
+  font-size: 55px;
+}
+
+#contact .layer-7 .container-6 .title {
+  font-weight: 700;
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
+#contact .layer-7 .container-6 {
+  width: 92%;
+}
+
+#contact .layer-7 .container-6 .title::after {
+  top: 73%;
+  left: 40%;
+  width: 70px;
+}
+
+#contact .layer-7 .container-6 .content {
+  margin-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+}
+
+#contact .layer-7 .container-6 .content .left {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+#contact .layer-7 .container-6 .content .left h2 {
+  font-size: 22px;
+  width: 100%;
+}
+
+#contact .layer-7 .container-6 .content .left p {
+  line-height: 1.8;
+  width: 100%;
+  
+}
+
+#contact .layer-7 .container-6 .content .left .text-1 {
+  margin-bottom: 20px;
+}
+
+#contact .layer-7 .container-6 .content .right {
+  width: 100%;
+  text-align: center;
+}
+
+#contact .layer-7 .container-6 .content .right h2 {
+  font-weight: 400;
+  font-size: 22px;
+}
+
+#contact .layer-7 .container-6 .content .right input {
+  width: 100%;
+  font-size: 15px;
+}
+
+#contact .layer-7 .container-6 .content .right .up {
+  margin-right: 0;
+}
+
+#contact .layer-7 .container-6 .content .right .up-1 {
+  margin-left: 0;
+}
+
+#contact .layer-7 .container-6 .content .right button {
+  padding: 12px 25px;
+  font-size: 15px;
+  margin-bottom: 50px;
+}
+
+  /* ========= section Footer==========  */
+  #footer {
+    padding-top: 30px;
+  }
+  
+  #footer .container-8
+  {
+    flex-wrap: wrap;
+  }
+  
+  #footer .container-8 .left {
+    width: 100%;
+    padding-left: 0px;
+    text-align: center;
+  }
+  
+  #footer .container-8 .left p
+  {
+    font-size: 16px;
+  }
+  
+  #footer .container-8 .right {
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 0;
+    justify-content: center;
+  }
+  
+  #footer .container-8 .arrow-up {
+    bottom: 3px;
+    right: 10px;
+  }
+
+}
+
+/*============================================================================*/
+@media screen and (min-width:569px) and (max-width:768px) {
+
+/*    Section Home ===============*/
+  
+#home
+{
+  background-position: center center;
+}
+
+#home .navbar{
+  flex-direction: row;
+}
+
+#home .navbar .logo {
+  padding-left: 5px;
+  display: block;
+}
+
+#home .navbar .links {
+  width: 70%;
+}
+
+
+#home .navbar .links ul {
+  width: 80%;
+}
+
+#home .navbar .links ul a{
+  padding: 5px;
+  font-size: 10px;
+}
+
+#home .layer .caption h1 {
+  font-size: 65px;
+}
+
+#home .layer .caption button {
+  padding: 10px 25px;
+}
+
+  /*    Section About ===============*/  
+  #about .layer-2::before {
+    top: 40px;
+    left: 10%;
+    font-size: 50px;
+  }
+  
+  #about .layer-2 .container-1 {
+    width: 90%;
+  }
+  
+  #about .layer-2 .container-1 .title {
+
+    font-size: 30px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+  }
+  
+  #about .layer-2 .container-1 .title::after {
+    top: 70%;
+    left: 35%;
+  }
+  
+  #about .layer-2 .container-1 .content {
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  #about .layer-2 .container-1 .content .cont-1 {
+    width: 100%;
+    text-align: center;
+  }
+  
+  #about .layer-2 .container-1 .content .cont-1 h2 {
+    font-size: 28px;    
+  }
+
+  
+  #about .layer-2 .container-1 .content .cont-1 p {
+    font-size: 15px;
+  }
+  
+  #about .layer-2 .container-1 .content .cont-1 .space {
+    padding-bottom: 40px;
+  }
+
+  #about .layer-2 .container-1 .content .cont-2 {
+    width: 100%;
+  }
+
+  #about .layer-2 .container-1 .number {
+    flex-wrap: wrap;
+  }
+  
+  
+  
+  #about .layer-2 .container-1 .number .line::after {
+    left: 120%;
+
+  }
+
+ 
+  /*    Section What Do ===============*/
+  #what-do .layer-3::before {
+    top: 18px;
+    left: 20%;
+    font-size: 90px;
+  }
+  
+  #what-do .layer-3 .container-2 {
+    width: 80%;
+  }
+  
+  #what-do .layer-3 .container-2 .title {
+    font-size: 32px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+  }
+  
+  #what-do .layer-3 .container-2 .title::after {
+    left: 45%;
+  }
+  
+  #what-do .layer-3 .container-2 .content .text {
+    width: 100%;
+  }
+  
+  #what-do .layer-3 .container-2 .content .text .icon i {
+    width: 80px;
+    height: 80px;
+  }
+  
+  
+  /*    Section Resume ===============*/
+  
+  #resume .layer-4::before {
+    top: 15px;
+    left: 20%;
+    font-size: 80px;
+  }
+  
+  #resume .layer-4 .container-3 {
+    width: 70%;
+  }
+  
+  #resume .layer-4 .container-3 .title {
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  
+  #resume .layer-4 .container-3 .title::after {
+    top: 70%;
+    left: 45%;
+  }
+  
+  #resume .layer-4 .container-3 .content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #resume .layer-4 .container-3 .content .left,
+  #resume .layer-4 .container-3 .content .right {
+    width: 100%;
+  }
+  
+  #resume .layer-4 .container-3 .content .left .text .red,
+  #resume .layer-4 .container-3 .content .right .text .red {
+    font-size: 15px;
+  }
+  
+  #resume .layer-4 .container-3 .skills .progress .progres {
+    width: 100%;
+  }
+
+  #resume .layer-4 .container-3 .btn button {
+    padding: 12px 25px;
+  }
+  
+/*    Section portfolio ===============*/
+#portfolio {
+  height: 1410px; 
+  position: relative;
+}
+
+#portfolio .layer-5 {
+  position: relative;
+}
+
+#portfolio .layer-5::before {
+  top: 15px;
+  left: 20%;
+  font-size: 80px;
+}
+
+#portfolio .layer-5 .container-4 {
+  width: 80%;
+}
+
+#portfolio .layer-5 .container-4 .title {
+  font-size: 32px;
+  padding-top: 0;
+  padding-bottom: 30px;
+}
+
+#portfolio .layer-5 .container-4 .title::after {
+  top: 58%;
+  left: 45%;
+}
+
+#portfolio .layer-5 .container-4 .list {
+  margin: 20px 0;
+}
+
+#portfolio .layer-5 .container-4 .list  ul{
+  justify-content: center;
+}
+
+#portfolio .layer-5 .container-4 .list  ul li {
+  padding: 15px;
+  font-size: 20px;
+}
+
+#portfolio .layer-5 .container-4 .list  ul .color::after {
+  width: 40px;
+  top: 45px;
+  left: 5px;
+}
+
+#portfolio .layer-5 .container-4 .pics {
+  position: relative;
+}
+
+#portfolio .layer-5 .container-4 .pics .picture {
+  width: 50%;
+}
+
+#portfolio .layer-5 .container-4 .pics .one {
+  position: relative;
+  left: 0;
+}
+
+#portfolio .layer-5 .container-4 .pics .two {
+  position: relative;
+  left: 0;
+}
+
+#portfolio .layer-5 .container-4 .pics .three {
+  position: relative;
+  left: 0;
+  top: -270px;
+}
+
+#portfolio .layer-5 .container-4 .pics .four {
+  position: relative;
+  left: -300px;
+  top: -70px;
+}
+
+#portfolio .layer-5 .container-4 .pics .five {
+  position: relative;
+  left: 300px;
+  top: -440px;
+}
+
+#portfolio .layer-5 .container-4 .pics .six {
+  position:   relative;
+  left: 0;
+  top: -230px;
+}
+
+#portfolio .layer-5 .container-4 .pics .seven {
+  position: relative;
+  left: 0;
+  top: -370px;
+}
+
+#portfolio .layer-5 .container-4 .pics .one .overley,
+#portfolio .layer-5 .container-4 .pics .two .overley,
+#portfolio .layer-5 .container-4 .pics .three .overley,
+#portfolio .layer-5 .container-4 .pics .four .overley,
+#portfolio .layer-5 .container-4 .pics .five .overley,
+#portfolio .layer-5 .container-4 .pics .six .overley,
+#portfolio .layer-5 .container-4 .pics .seven .overley {
+  width: 92%;
+  height: 89%;
+}
+
+#portfolio .layer-5 .container-4 .pics .two .overley {
+  height: 95%;
+}
+#portfolio .layer-5 .container-4 .pics .four .overley {
+  height: 94.5%;
+}
+
+#portfolio .layer-5 .container-4 .pics .six .overley {
+  height: 92.2%;
+}
+
+#portfolio .layer-5 .container-4 .pics .seven .overley {
+  height: 82%;
+}
+
+/*    Section Clinet  ===============*/
+#clinet .layer-6::before {
+  top: 30px;
+  left: 15%;
+  font-size: 80px;
+}
+
+#clinet .layer-6 .container-5 {
+  width: 70%;
+}
+
+#clinet .layer-6 .container-5 .title {
+  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#clinet .layer-6 .container-5 .title::after {
+  top: 70%;
+  left: 43%;
+}
+
+#clinet .layer-6 .container-5 .content {
+  flex-wrap: wrap;
+}
+
+#clinet .layer-6 .container-5 .content .circle {
+  left: 45%;
+}
+
+#clinet .layer-6 .container-5 .content::before {
+  left: 45.7%;
+}
+
+#clinet .layer-6 .container-5 .content .circle-2 {
+  left: 52%;
+}
+
+#clinet .layer-6 .container-5 .content .left {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+#clinet .layer-6 .container-5 .content .right {
+  width: 100%;
+  padding: 0;
+  margin-top: 0;
+}
+
+#clinet .layer-6 .container-5 .content .extra-layer .top .image {
+  width: 20%;
+}
+
+#clinet .layer-6 .container-5 .content .extra-layer .top .image img {
+  width: 100%;
+}
+
+#clinet .layer-6 .container-5 .content .extra-layer .top .text {
+  width: 70%;
+  margin-top: 10px;
+}
+
+#clinet .layer-6 .container-5 .content .right {
+  display: none;
+}
+
+
+/*    Section Contact  ===============*/
+#contact {
+  padding: 30px 0 50px;
+}
+
+#contact .layer-7 {
+  padding:  0;
+}
+
+#contact .layer-7::before {
+  top: 8px;
+  left: 20%;
+  height: 100px;
+  font-size: 90px;
+}
+
+#contact .layer-7 .container-6 .title {
+  font-weight: 700;
+  font-size: 30px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+#contact .layer-7 .container-6 {
+  width: 80%;
+}
+
+#contact .layer-7 .container-6 .title::after {
+  top: 73%;
+  left: 45%;
+  width: 70px;
+}
+
+#contact .layer-7 .container-6 .content {
+  margin-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+}
+
+#contact .layer-7 .container-6 .content .left {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+#contact .layer-7 .container-6 .content .left h2 {
+  font-size: 22px;
+  width: 100%;
+}
+
+
+#contact .layer-7 .container-6 .content .left .text-1 {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+#contact .layer-7 .container-6 .content .right {
+  width: 100%;
+  text-align: center;
+}
+
+#contact .layer-7 .container-6 .content .right h2 {
+  font-weight: 400;
+  font-size: 22px;
+}
+
+#contact .layer-7 .container-6 .content .right input {
+  width: 100%;
+  font-size: 15px;
+}
+
+#contact .layer-7 .container-6 .content .right .up {
+  margin-right: 0;
+}
+
+#contact .layer-7 .container-6 .content .right .up-1 {
+  margin-left: 0;
+}
+
+#contact .layer-7 .container-6 .content .right button {
+  padding: 12px 25px;
+  font-size: 15px;
+  margin-bottom: 50px;
+}
+
+  /* ========= section Footer==========  */
+  #footer {
+    padding-top: 30px;
+  }
+  
+  #footer .container-8
+  {
+    flex-wrap: wrap;
+  }
+  
+  #footer .container-8 .left {
+    width: 100%;
+    padding-left: 0px;
+    text-align: center;
+  }
+  
+  #footer .container-8 .left p
+  {
+    font-size: 16px;
+  }
+  
+  #footer .container-8 .right {
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 0;
+    justify-content: center;
+  }
+  
+  #footer .container-8 .arrow-up {
+    bottom: 3px;
+    right: 10px;
+  }
+
+
+}
+
+
+/*============================================================================*/
+@media screen and (min-width:769px) and (max-width:992px) {
+
+/*    Section Home ===============*/
+  
+#home
+{
+  background-position: center center;
+}
+
+#home .navbar{
+  flex-direction: row;
+}
+
+#home .navbar .logo {
+  padding-left: 5px;
+  display: block;
+}
+
+#home .navbar .links {
+  width: 70%;
+}
+
+
+#home .navbar .links ul {
+  width: 80%;
+}
+
+#home .navbar .links ul a{
+  padding: 5px;
+  font-size: 10px;
+}
+
+#home .layer .caption h1 {
+  font-size: 65px;
+}
+
+#home .layer .caption button {
+  padding: 10px 25px;
+}
+
+  /*    Section About ===============*/  
+  #about .layer-2::before {
+    top: 40px;
+    left: 20%;
+    font-size: 100px;
+  }
+  
+  #about .layer-2 .container-1 {
+    width: 90%;
+  }
+  
+  #about .layer-2 .container-1 .title {
+
+    font-size: 30px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+  }
+  
+  #about .layer-2 .container-1 .title::after {
+    top: 75%;
+    left: 45%;
+  }
+  
+  #about .layer-2 .container-1 .content {
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  #about .layer-2 .container-1 .content .cont-1 {
+    width: 100%;
+    text-align: center;
+  }
+  
+  #about .layer-2 .container-1 .content .cont-1 h2 {
+    font-size: 28px;    
+  }
+
+  
+  #about .layer-2 .container-1 .content .cont-1 p {
+    font-size: 15px;
+  }
+  
+  #about .layer-2 .container-1 .content .cont-1 .space {
+    padding-bottom: 40px;
+  }
+
+  #about .layer-2 .container-1 .content .cont-2 {
+    width: 100%;
+  }
+
+  #about .layer-2 .container-1 .number {
+    flex-wrap: wrap;
+  }
+  
+  
+  
+  #about .layer-2 .container-1 .number .line::after {
+    left: 120%;
+
+  }
+
+ 
+  /*    Section What Do ===============*/
+  #what-do .layer-3::before {
+    top: 15px;
+    left: 20%;
+    font-size: 100px;
+  }
+  
+  #what-do .layer-3 .container-2 {
+    width: 85%;
+  }
+  
+  #what-do .layer-3 .container-2 .title {
+    font-size: 32px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+  
+  #what-do .layer-3 .container-2 .title::after {
+    left: 45%;
+  }
+  
+  #what-do .layer-3 .container-2 .content .text .icon i {
+    width: 60px;
+    height: 60px;
+  }
+  
+  
+  /*    Section Resume ===============*/
+  
+  #resume .layer-4::before {
+    top: 15px;
+    left: 20%;
+    font-size: 100px;
+  }
+  
+  #resume .layer-4 .container-3 {
+    width: 70%;
+  }
+  
+  #resume .layer-4 .container-3 .title {
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  
+  #resume .layer-4 .container-3 .title::after {
+    top: 70%;
+    left: 45%;
+  }
+  
+  
+/*    Section portfolio ===============*/
+#portfolio {
+  height: 1650px; 
+  position: relative;
+}
+
+#portfolio .layer-5 {
+  position: relative;
+}
+
+#portfolio .layer-5::before {
+  top: 15px;
+  left: 20%;
+  font-size: 100px;
+}
+
+#portfolio .layer-5 .container-4 {
+  width: 80%;
+}
+
+#portfolio .layer-5 .container-4 .title {
+  font-size: 32px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+#portfolio .layer-5 .container-4 .title::after {
+  top: 68%;
+  left: 45%;
+}
+
+#portfolio .layer-5 .container-4 .list {
+  margin: 20px 0;
+}
+
+#portfolio .layer-5 .container-4 .list  ul{
+  justify-content: center;
+}
+
+#portfolio .layer-5 .container-4 .list  ul li {
+  padding: 15px;
+  font-size: 20px;
+}
+
+#portfolio .layer-5 .container-4 .list  ul .color::after {
+  width: 40px;
+  top: 45px;
+  left: 5px;
+}
+
+#portfolio .layer-5 .container-4 .pics {
+  position: relative;
+}
+
+#portfolio .layer-5 .container-4 .pics .picture {
+  width: 50%;
+}
+
+#portfolio .layer-5 .container-4 .pics .one {
+  position: relative;
+  left: 0;
+}
+
+#portfolio .layer-5 .container-4 .pics .two {
+  position: relative;
+  left: 0;
+}
+
+#portfolio .layer-5 .container-4 .pics .three {
+  position: relative;
+  left: 0;
+  top: -320px;
+}
+
+#portfolio .layer-5 .container-4 .pics .four {
+  position: relative;
+  left: -355px;
+  top: -85px;
+}
+
+#portfolio .layer-5 .container-4 .pics .five {
+  position: relative;
+  left: 350px;
+  top: -510px;
+}
+
+#portfolio .layer-5 .container-4 .pics .six {
+  position:   relative;
+  left: 0;
+  top: -270px;
+}
+
+#portfolio .layer-5 .container-4 .pics .seven {
+  position: relative;
+  left: 3px;
+  top: -440px;
+}
+
+#portfolio .layer-5 .container-4 .pics .one .overley,
+#portfolio .layer-5 .container-4 .pics .two .overley,
+#portfolio .layer-5 .container-4 .pics .three .overley,
+#portfolio .layer-5 .container-4 .pics .four .overley,
+#portfolio .layer-5 .container-4 .pics .five .overley,
+#portfolio .layer-5 .container-4 .pics .six .overley,
+#portfolio .layer-5 .container-4 .pics .seven .overley {
+  width: 93%;
+  height: 89%;
+}
+
+#portfolio .layer-5 .container-4 .pics .two .overley {
+  height: 95%;
+}
+#portfolio .layer-5 .container-4 .pics .four .overley {
+  height: 95%;
+}
+
+
+#portfolio .layer-5 .container-4 .pics .six .overley {
+  height: 92.2%;
+}
+
+#portfolio .layer-5 .container-4 .pics .seven .overley {
+  height: 82%;
+}
+
+/*    Section Clinet  ===============*/
+#clinet .layer-6::before {
+  top: 15px;
+  left: 15%;
+  font-size: 100px;
+}
+
+#clinet .layer-6 .container-5 {
+  width: 70%;
+}
+
+#clinet .layer-6 .container-5 .title {
+  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#clinet .layer-6 .container-5 .title::after {
+  top: 70%;
+  left: 43%;
+}
+
+#clinet .layer-6 .container-5 .content {
+  flex-wrap: wrap;
+}
+
+#clinet .layer-6 .container-5 .content .circle {
+  left: 45%;
+}
+
+#clinet .layer-6 .container-5 .content::before {
+  left: 45.7%;
+}
+
+#clinet .layer-6 .container-5 .content .circle-2 {
+  left: 50%;
+}
+
+#clinet .layer-6 .container-5 .content .left {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+#clinet .layer-6 .container-5 .content .right {
+  width: 100%;
+  padding: 0;
+  margin-top: 0;
+}
+
+#clinet .layer-6 .container-5 .content .extra-layer .top .image {
+  width: 20%;
+}
+
+#clinet .layer-6 .container-5 .content .extra-layer .top .image img {
+  width: 100%;
+}
+
+#clinet .layer-6 .container-5 .content .extra-layer .top .text {
+  width: 70%;
+  margin-top: 10px;
+}
+
+#clinet .layer-6 .container-5 .content .right {
+  display: none;
+}
+
+
+/*    Section Contact  ===============*/
+#contact {
+  padding: 30px 0 50px;
+}
+
+#contact .layer-7 {
+  padding:  0;
+}
+
+#contact .layer-7::before {
+  top: -10px;
+  left: 20%;
+  height: 100px;
+  font-size: 110px;
+}
+
+#contact .layer-7 .container-6 .title {
+  font-weight: 700;
+  font-size: 30px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+#contact .layer-7 .container-6 {
+  width: 80%;
+}
+
+#contact .layer-7 .container-6 .title::after {
+  top: 73%;
+  left: 45%;
+  width: 70px;
+}
+
+
+#contact .layer-7 .container-6 .content .right h2 {
+
+  margin-left: 50px;
+}
+
+#contact .layer-7 .container-6 .content .right input {
+  width: 90%;
+}
+
+#contact .layer-7 .container-6 .content .right .up {
+  margin-left: 50px;
+}
+
+#contact .layer-7 .container-6 .content .right .up-1 {
+  margin-left: 50px;
+}
+
+#contact .layer-7 .container-6 .content .right .down {
+  width: 90%;
+  margin-left: 50px;
+}
+
+  /* ========= section Footer==========  */
+  #footer {
+    padding-top: 30px;
+  }
+  
+  #footer .container-8
+  {
+    flex-wrap: wrap;
+  }
+  
+  #footer .container-8 .left {
+    width: 100%;
+    padding-left: 0px;
+    text-align: center;
+  }
+  
+  #footer .container-8 .left p
+  {
+    font-size: 16px;
+  }
+  
+  #footer .container-8 .right {
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 0;
+    justify-content: center;
+  }
+  
+  #footer .container-8 .arrow-up {
+    bottom: 3px;
+    right: 10px;
+  }
+
+}
